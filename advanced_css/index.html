@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Features</title>
+    <!-- Google Font: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Welcome to the Advanced Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Color Modes Section -->
+        <section id="home" class="color-modes">
+            <h2>Color Modes: RGB, HEX, HSV</h2>
+            <div class="box rgb">RGB: rgb(54, 30, 128)</div>
+            <div class="box hex">HEX: #ff6347</div>
+            <div class="box hsv">HSV: hsv(180, 50%, 75%)</div>
+        </section>
+
+        <!-- Animation & Transition Section -->
+        <section id="features" class="animation-section">
+            <h2>Hover over the Box to see Transition and Animation</h2>
+            <div class="animated-box">Hover Me</div>
+        </section>
+
+        <!-- Typography and Translation Section -->
+        <section id="contact">
+            <h2 class="font-example">This is an Example of Typography with a Custom Font</h2>
+            <button id="translateBtn">Translate to Spanish</button>
+            <p id="textToTranslate">This text will be translated when you click the button.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Advanced Web Page. All rights reserved.</p>
+    </footer>
+
+    <!-- Translation Script -->
+    <script src="script.js"></script>
+</body>
+</html>

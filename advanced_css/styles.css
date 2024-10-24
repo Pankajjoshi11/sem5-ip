@@ -1,0 +1,134 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Downloaded font */
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgb(54, 30, 128); /* RGB color mode */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Color Modes Section */
+.color-modes {
+    padding: 2rem;
+    text-align: center;
+}
+
+.box {
+    padding: 2rem;
+    margin: 1rem;
+    color: white;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.rgb {
+    background-color: rgb(54, 30, 128); /* RGB Mode */
+}
+
+.hex {
+    background-color: #ff6347; /* HEX Mode */
+}
+
+.hsv {
+    background-color: hsl(180, 50%, 75%); /* HSV Mode */
+}
+
+/* Animation & Transition Section */
+.animation-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.animated-box {
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* CSS Transition */
+}
+
+.animated-box:hover {
+    background-color: #ff6347;
+    transform: scale(1.2);
+}
+
+.animated-box::after {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    animation: bounce 1s infinite; /* CSS Animation */
+}
+
+@keyframes bounce {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+/* Typography Section */
+.font-example {
+    font-weight: 700; /* Use bold from downloaded font */
+    text-align: center;
+    padding: 1rem;
+}
+
+#textToTranslate {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+button {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
